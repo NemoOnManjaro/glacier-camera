@@ -5,16 +5,16 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=glacier-camera
-pkgver=0.1.4
+pkgver=0.1.5
 pkgrel=1
 pkgdesc="Glacier Camera"
 arch=('x86_64' 'aarch64')
 url="https://github.com/nemomobile-ux/glacier-camera"
 license=('LGPL-2.0-or-later')
-depends=('qt5-glacier-app' 'nemo-qml-plugin-settings')
+depends=('qt5-glacier-app>=0.9' 'nemo-qml-plugin-settings')
 makedepends=('qt5-tools' 'cmake')
 source=("${url}/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('0449003d49c6d4c76206be67a2e9b59149e0db7185f8e56a5b937303db291b1a')
+sha256sums=('44bb9c2e811ebc5d1292f9cf7e0346cc33ec3d03ea966c03a7a1bf7c03f41d4b')
 
 build() {
     cd $pkgname-$pkgver
